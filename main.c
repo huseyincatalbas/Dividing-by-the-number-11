@@ -11,7 +11,10 @@
 static int sum=0,remaining=0,d1,numberSet[10];
 static int numberDigitValue=10,numberDigitRemainder,inputNumber;
 
-int main(int argc,char *argv[])
+void d1Add(int d1, int numberSet[]);
+int d1DigitValueCalc(int inputNumber);
+
+int main(int argc, char *argv[])
 {
   inputNumber=atoi(argv[1]);
   /*Burada girilen string sayıyı atoi fonksiyonu ile integer 
@@ -30,7 +33,7 @@ int main(int argc,char *argv[])
   return 0;
 }
 
-void d1Add(int d1,int numberSet[])
+void d1Add(int d1, int numberSet[])
 /*d1 sayısını programın başında  alınan sayıya ekleme işlemi yaptım*/
 {
   for(int i=8;i>=0;i--)
@@ -47,7 +50,6 @@ void d1Add(int d1,int numberSet[])
   /*Programın başında girilmiş olan sayılara ek olarak d1 sayısı
   değerini ekledim.*/
 
-  return 0;
 }
 
 
